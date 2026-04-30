@@ -1,5 +1,5 @@
 class CandleBuilder:
-    def __init__(self, timeframe_seconds=60):
+    def __init__(self, timeframe_seconds=3):
         self.tf = timeframe_seconds * 1000
         self.candles = {}
 
@@ -42,3 +42,5 @@ class CandleBuilder:
             "close": c["close"],
             "volume": c["volume"]
         }
+    
+
